@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    /* padding: 0; */
+    /* border: 0; */
+}
+
+header {
+    background-color: black;
+    width: fit-content;
+}
+
+.navbar-ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-ul li {
+    display: inline;
+}
+
+a {
+    padding-right: 5px;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+/* element.class without space is given to avoid other elements with class 'active' */
+a.active {
+    color: yellowgreen;
+    text-decoration: underline;
+    background: #fff;
+}
+
+/* element.class without space is given to avoid other elements with class 'active' */
+td.active {
+    color: green;
+    text-decoration: underline;
+}
+
+td.inactive {
+    color: red;
+    text-decoration: underline;
+}

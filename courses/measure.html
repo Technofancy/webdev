@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measurement Units</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        header {
+            background-color: black;
+            width: fit-content;
+        }
+
+        .navbar-ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-ul li {
+            display: inline;
+        }
+
+        a {
+            padding-right: 5px;
+            text-decoration: none;
+            color: blueviolet;
+        }
+        .parent {
+            width: 50%;
+            height: 200px;
+            background-color: aqua;
+            border: 1px solid;
+        }
+
+        .child1 {
+            width: 50%;
+            height: 50%;
+            background-color: blue;
+            border: 1px solid;
+            box-sizing: border-box; 
+        }
+        .child2 {
+            width: 75%;
+            height: 50%;
+            background-color: blueviolet;
+            border: 1px solid;
+            box-sizing: border-box;
+        }
+        .box {
+            border: 1px solid;
+            /* padding: 16px; */
+            /* padding: 1rem; */
+            /* padding: 2em; */
+        }
+    </style>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Change paths in correct relatives -->
+        <ul class="navbar-ul">
+            <li><a href="../index.html">Home</a></li>&nbsp;
+            <li><a href="../about.html">About us</a></li>&nbsp;
+            <li><a href="../courses/current/current-courses.html">Courses</a></li>&nbsp;
+            <li><a href="../courses/upcoming/upcoming-courses.html">Upcoming Courses</a></li>
+            <li><a href="../courses/allCourses.html">All courses</a></li>&nbsp;
+            <li><a href="./contact.html">Contacts</a></li>
+            <li><a href="#" class="active">Measurements</a></li>
+        </ul>
+    </header>
+
+    <h1>Measurement Units</h1>
+    <ul>
+        <li><h2>px</h2></li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, doloribus minus?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, doloribus minus?</p>
+
+        <li><h2>%</h2></li>
+        <div class="parent">
+            <div class="child1">Child1</div>
+            <div class="child2">Child2</div>
+        </div>
+
+        <li><h2>rem</h2></li>
+        <div class="box">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae fuga explicabo illo quia.
+            </p>
+        </div>
+            
+        <li><h2>em</h2></li>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem illum autem esse, vitae doloribus?
+        </p>
+
+        <li><h2>vh</h2></li>
+        <li><h2>vw</h2></li>
+    </ul>
+</body>
+</html>

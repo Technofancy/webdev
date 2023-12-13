@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <style>
+        body {
+            margin: 0;
+            /* padding: 0; */
+            /* border: 0; */
+        }
+
+        header {
+            background-color: black;
+            width: fit-content;
+        }
+
+        .navbar-ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-ul li {
+            display: inline;
+        }
+
+        header, a{
+            text-color:aqua;
+        }
+
+        a {
+            padding-right: 5px;
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        h1 {
+            text-align: center;
+            color: lightgreen;
+        }
+
+        table {
+            border: 1px solid black;
+        }
+
+        th {
+            border-right: 1.5px solid blue;
+            border-bottom: 1.5px solid blue;
+        }
+
+        td {
+            border-right: 1px solid green;
+            border-bottom: 1px solid green;
+        }
+
+        #email {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        #email:hover {
+            background-color: blue;
+            color: red;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./courses/css/style.css">
+</head>
+
+<body>
+    <header>
+        <ul class="navbar-ul">
+            <li>
+                <a href="./index.html" class="page_clicked">Home</a>
+            </li>
+            <li>
+                <a href="#" class="active">About us</a>
+            </li>
+            <li>
+                <a href="./courses/current/current-courses.html">Courses</a>
+            </li>
+            <li>
+                <a href="/courses/upcoming/upcoming-courses.html">Upcoming Courses</a>
+            </li>
+            <li>
+                <a href="./courses/allCourses.html">All courses</a>
+            </li>
+            <li><a href="./courses/contact.html" >Contacts</a></li>
+            <li><a href="./courses/measure.html">Measurements</a></li>
+        </ul>
+    </header>
+    <h1>All About Us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, minus?</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+                <th rowspan="2">email / Website</th>
+            </tr>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Bhuwan</td>
+                <td>Khatri</td>
+                <td id="email"><a target='_blank' href="https://bhuwankhatri.com.np">bhuwankhatri.com.np</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
