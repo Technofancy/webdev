@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .parent {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+    
+        .child {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        .parent:nth-child(2n) {
+            color: red;
+        }
+
+        .fill-req::after {
+      content: " *";
+      color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">child-1</div>
+        <div class="child">child-2</div>
+        <div class="child">child-3</div>
+        <div class="child">child-4</div>
+        <div class="child">child-5</div>
+
+    </div>
+
+    <form action="#" method="post">
+        <label for="name" class="fill-req">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <br>
+
+        <label for="phone" class="fill-opt">Phone:</label>
+        <input type="number" id="phone">
+        
+        <br>
+        
+        <label for="password" class="fill-req">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <br>
+        
+        <input type="submit" value="Submit">
+      </form>
+
+</body>
+</html>
