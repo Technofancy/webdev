@@ -26,6 +26,7 @@
             border-radius: 24px;
             gap: 40px;
             background: #FFF5C5;
+            overflow: hidden;
         }
 
         .callback-sect {
@@ -40,6 +41,7 @@
         }
 
         header p {
+            position: relative;
             font-family: Poppins;
             font-size: 42px;
             font-weight: 600;
@@ -47,15 +49,14 @@
             letter-spacing: 0em;
             text-align: left;
             color: #E27C00;
-
         }
 
-        header p .vector {
-            width: 201px;
+        header span img {
+            position: absolute;
+            width: 175px;
             height: 16px;
-            top: 44px;
-            left: 217px;
-            background: #ABFFD6;
+            margin-top: 45px;
+            margin-left: -170px;
         }
 
         .callback-sect .Descript {
@@ -69,6 +70,7 @@
             letter-spacing: 0em;
             text-align: left;
             color: #E27C00;
+            margin-top: 50px;
         }
 
         .child .floating-bg {
@@ -110,41 +112,39 @@
 
             <div class="callback-sect">
                 <header>
-                    <p>Request a Callback<span class="vector"></span></p>
+                    <p>Request a <span>Callback <img src="./img/Vector 1.png" alt="vector"></span></p>
                 </header>
                 <p class="Descript">Would You Like To Speak To One Of Our Advisor Over The Phone? Just Submit Your
                     Details And Will Be In Touch Shortly. You Can Also Email Us If You Would prefer.</p>
             </div>
-
-
 
             <form id="info-form" class="info-counter">
 
                 <div class="label-input-container">
                     <label for="course">I'm interested in</label>
                     <div class="input-container">
-                        <input type="text" id="course" name="course" required>
+                        <input type="text" id="course" name="course" value="Select your course" required>
                     </div>
                 </div>
 
                 <div class="label-input-container">
                     <label for="name">Name:</label>
                     <div class="input-container">
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" value="Enter Full-Name" required>
                     </div>
                 </div>
 
                 <div class="label-input-container">
                     <label for="email">Email:</label>
                     <div class="input-container">
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" value="Enter e-mail" required>
                     </div>
                 </div>
 
                 <div class="label-input-container">
                     <label for="phone">Phone:</label>
                     <div class="input-container">
-                        <input type="tel" id="phone" name="phone" required>
+                        <input type="tel" id="phone" name="phone" value="Enter phone number" required>
                     </div>
                 </div>
 
@@ -152,8 +152,6 @@
                     <button type="submit"><span>Submit</span><img src="./img/clarity_arrow-line.png" alt="->"></button>
                 </div>
             </form>
-
-
 
             <div class="floating-bg">
                 <div class="ellipse-1"></div>

@@ -1,62 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-
-        .parent {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    
-        .child {
-            height: 100px;
-            width: 100px;
+
+        .project {
             border: 1px solid;
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
         }
 
-        .parent:nth-child(2n) {
-            color: red;
+        .projects {
+            width: 0;
         }
 
-        .fill-req::after {
-      content: " *";
-      color: red;
-    }
+        @media (min-width:1024px) {
+            .project {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .projects {
+                width: 25%;
+                background-color: aqua;
+            }
+        }
+
+        @media (min-width:1279px) {
+            .project {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .projects {
+                width: 33.33%;
+                background-color: blueviolet;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div class="parent">
-        <div class="child">child-1</div>
-        <div class="child">child-2</div>
-        <div class="child">child-3</div>
-        <div class="child">child-4</div>
-        <div class="child">child-5</div>
+    <h1>Projects</h1>
+    <div class="projects">
 
+        <div class="project zero">
+            <h2>Topic 0</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis quasi unde ducimus
+                suscipit! Placeat voluptatibus iusto soluta cupiditate doloribus ratione! Esse consectetur tempore autem
+                nulla praesentium distinctio, expedita ut?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit consequuntur, dolorem quis odio
+                vitae impedit debitis in, doloribus nemo aperiam sed, fugit molestiae dolore corrupti veritatis ad
+                laudantium possimus.
+            </p>
+        </div>
+
+        <div class="project one">
+            <h2>Topic 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis quasi unde ducimus
+                suscipit! Placeat voluptatibus iusto soluta cupiditate doloribus ratione! Esse consectetur tempore autem
+                nulla praesentium distinctio, expedita ut?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit consequuntur, dolorem quis odio
+                vitae impedit debitis in, doloribus nemo aperiam sed, fugit molestiae dolore corrupti veritatis ad
+                laudantium possimus.
+            </p>
+        </div>
+
+        <div class="project two">
+            <h2>Topic 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis quasi unde ducimus
+                suscipit! Placeat voluptatibus iusto soluta cupiditate doloribus ratione! Esse consectetur tempore autem
+                nulla praesentium distinctio, expedita ut?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit consequuntur, dolorem quis odio
+                vitae impedit debitis in, doloribus nemo aperiam sed, fugit molestiae dolore corrupti veritatis ad
+                laudantium possimus.
+            </p>
+        </div>
+
+        <div class="project three">
+            <h2>Topic 3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis quasi unde ducimus
+                suscipit! Placeat voluptatibus iusto soluta cupiditate doloribus ratione! Esse consectetur tempore autem
+                nulla praesentium distinctio, expedita ut?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit consequuntur, dolorem quis odio
+                vitae impedit debitis in, doloribus nemo aperiam sed, fugit molestiae dolore corrupti veritatis ad
+                laudantium possimus.
+            </p>
+        </div>
+
+        <div class="project four">
+            <h2>Topic 4</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis quasi unde ducimus
+                suscipit! Placeat voluptatibus iusto soluta cupiditate doloribus ratione! Esse consectetur tempore autem
+                nulla praesentium distinctio, expedita ut?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit consequuntur, dolorem quis odio
+                vitae impedit debitis in, doloribus nemo aperiam sed, fugit molestiae dolore corrupti veritatis ad
+                laudantium possimus.
+            </p>
+        </div>
     </div>
-
-    <form action="#" method="post">
-        <label for="name" class="fill-req">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <br>
-
-        <label for="phone" class="fill-opt">Phone:</label>
-        <input type="number" id="phone">
-        
-        <br>
-        
-        <label for="password" class="fill-req">Password:</label>
-        <input type="password" id="password" name="password" required>
-        
-        <br>
-        
-        <input type="submit" value="Submit">
-      </form>
-
 </body>
+
 </html>

@@ -41,12 +41,15 @@
     border-radius: 12px;
     justify-content: space-between;
     rotate: -0 deg;
-
+    background-color: #f1edee;
+    border: 1px solid #f1edee;
 }
 
 .info-counter .btn {
     display: flex;
-    justify-content: end;
+    /* justify-content: end; */
+    margin-left: 454px;
+    margin-top: 30px;
 }
 
 .info-counter button {

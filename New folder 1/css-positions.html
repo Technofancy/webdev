@@ -1,41 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Positions of CSSs</title>
 
     <style>
-        .box {
-            border: 1px solid;
-            height: 100px;
-            width: 100px;
-            /* gap: 2px; */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    .static {
-        list-style: none;
-    }
-    .relative {
-        list-style: none;
-    }
-    .obsolute {
-        list-style: none;
-    }
-    .fixed {
-        list-style: none;
-    }
-    .sticky {
-        list-style: none;
-    }
+
+        header {
+            background-color: black;
+            position: sticky;
+            top: 0;
+            border: 1px solid;
+            width: 500px;
+            height: 30px;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        main {
+            width: 11%;
+        }
+
+        .h-screen {
+            position: relative;
+            border: 1px solid;
+            height: 1500px;
+            width: 100px;
+        }
+
+        .box {
+            position: absolute;
+            border: 1px solid red;
+            height: 50px;
+            width: 50px;
+            position: sticky;
+            top: 10px;
+            margin-top: 150px;
+            background-color: brown;
+            z-index: 1;
+        }
+
+        .box-2 {
+            position: absolute;
+            border: 1px solid green;
+            height: 100px;
+            width: 40px;
+            position: sticky;
+            top: 10px;
+            background-color: greenyellow;
+            margin-top: -70px;
+            z-index: 0;
+        }
     </style>
 </head>
+
 <body>
-    <ul>
-        <li class="box static">static</li>
-        <li class="box relative">relative</li>
-        <li class="box obsolute">obsolute</li>
-        <li class="box fixed">fixed</li>
-        <li class="box sticky">sticky</li>
-    </ul>
+
+    <header class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eum maxime nostrum ducimus. Dolor et
+        </p>
+    </main>
+
+    <div class="h-screen">
+        <div class="box">
+            <p>Parent-box</p>
+        </div>
+        <div class="box-2">
+            <p>box-2</p>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, tenetur. 
+    </p>
+
 </body>
+
 </html>
