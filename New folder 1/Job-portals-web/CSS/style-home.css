@@ -1,0 +1,203 @@
+/* From popular categories */
+.categories-box {
+    position: relative;
+    width: 100%;
+    height: 671px;
+    top: 0px;
+    background-color: #F6F7FA;
+}
+
+
+.categories-box h2 {
+    position: relative;
+    text-align: center;
+    top: 33px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+
+.categories-box .pop-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.categories-box .pop-categories .category {
+    width: 232.66px;
+    height: 191px;
+    background-color: white;
+    margin-top: 66px;
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-categories .category .ellipse {
+    display: flex;
+    width: 75.18px;
+    height: 73px;
+    border-radius: 100%;
+    background-color: #33857352;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-categories .category .ellipse img {
+    width: 24.38px;
+    height: 24px;
+}
+
+.category p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+/* Styling job lists */
+.job-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.job-lists h2 {
+    position: relative;
+    text-align: center;
+    top: 33px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    margin-bottom: 33px;
+}
+
+.job-lists .job-bar {
+    display: flex;
+    align-items: center;
+    width: 1406.89px;
+    height: 152px;
+    border-radius: 10px;
+    border: 1px solid #F6F7FA;
+    margin-bottom: 25px;
+}
+
+.job-bar .ellipse {
+    width: 91px;
+    height: 91px;
+    border: 1px solid #338573;
+    background-color: #338573;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-bar .J {
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+.job-bar .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 33px;
+}
+
+.job-bar .content .comNjob {
+    display: flex;
+    flex-direction: column;
+}
+
+.comNjob .com-name {
+    position: relative;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: #5F5858;
+}
+
+.comNjob .jobtype {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.content .icons-etc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 36px;
+    position: relative;
+    right: 20px;
+}
+
+.content .icons-etc .location {
+    display: flex;
+    gap: 10px;
+}
+
+.job-bar button {
+    position: relative;
+    width: 188.46px;
+    height: 62px;
+    left: 660px;
+    border-radius: 10px;
+    background-color: #338573;
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 80px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .view-more-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.home .view-more-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 187px;
+    height: 62px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #338573;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 36px;
+}
+
+.home .footer {
+    width: 100%;
+    height: 83px;
+    background-color: #338573;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+}
