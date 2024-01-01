@@ -9,116 +9,101 @@
     <style>
         * {
             margin: 0;
-            padding: 0;
+            padding: 33px;
             box-sizing: border-box;
         }
 
+        h1 {
+            color: blueviolet;
+            text-align: center;
+            margin-bottom: -33px;
+        }
+
         .projects {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2.5px;
+            justify-content: center;
+        }
+
+        .container {
+            padding-right: 1rem;
+            padding-left: 1.7rem;
+            max-width: 1140px;
+            margin-right: auto;
+            margin-left: auto;
         }
 
         .project {
-            border: 1px solid;
+            border: 1px solid green;
             padding: 1rem;
+            /* min-height: 70px; */
+            min-width: 70px;
+            color: red;
+            text-align: center;
+            font-style: oblique;
         }
 
-        @media (min-width:627px) {
-            .projects {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .project {
-                width: 25%;
-                background-color: aqua;
-            }
+        .project:nth-child(1) {
+            grid-row: span 2;
+            background-color: aqua;
+            color: blue;
         }
-
-        @media (min-width:1024px) {
-            .projects {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .project {
-                width: 33.33%;
-                background-color: aqua;
-            }
+        .project:nth-child(3) {
+            grid-column : 3/3;
+            grid-row: span 4;
+            background-color: blue;
+            color: antiquewhite;
+            
         }
-
-        @media (min-width:1279px) {
-            .projects {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            .project {
-                width: 50%;
-                background-color: blueviolet;
-            }
+        .project:nth-child(5) {
+            grid-row: span 2;
+            background-color: aqua;
+            color: blue;
         }
+        .project:nth-child(6) {
+            grid-row: span 2;
+            background-color: aqua;
+            color: blue;
+        }
+        .project:nth-child(7) {
+            grid-row: span 2;
+            background-color: aqua;
+            color: blue;
+        }
+        .project:nth-child(8) {
+            grid-row: span 2;
+            background-color: blue;
+            color: antiquewhite;
+        }
+        .project:nth-child(9) {
+            grid-row: span 2;
+            background-color: blue;
+            color: antiquewhite;
+        }
+        .project:nth-child(10) {
+            z-index: 11;
+            grid-column: 1/6;
+            background-color: red;
+            color: antiquewhite;
+        }
+        
     </style>
 </head>
 
 <body>
-    <h1>Projects</h1>
-    <div class="projects">
-
-        <div class="project zero">
-            <h2>Topic 0</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis quasi unde ducimus
-                suscipit! Placeat voluptatibus iusto soluta cupiditate doloribus ratione! Esse consectetur tempore autem
-                nulla praesentium distinctio, expedita ut?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit consequuntur, dolorem quis odio
-                vitae impedit debitis in, doloribus nemo aperiam sed, fugit molestiae dolore corrupti veritatis ad
-                laudantium possimus.
-            </p>
-        </div>
-
-        <div class="project one">
-            <h2>Topic 1</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis quasi unde ducimus
-                suscipit! Placeat voluptatibus iusto soluta cupiditate doloribus ratione! Esse consectetur tempore autem
-                nulla praesentium distinctio, expedita ut?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit consequuntur, dolorem quis odio
-                vitae impedit debitis in, doloribus nemo aperiam sed, fugit molestiae dolore corrupti veritatis ad
-                laudantium possimus.
-            </p>
-        </div>
-
-        <div class="project two">
-            <h2>Topic 2</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis quasi unde ducimus
-                suscipit! Placeat voluptatibus iusto soluta cupiditate doloribus ratione! Esse consectetur tempore autem
-                nulla praesentium distinctio, expedita ut?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit consequuntur, dolorem quis odio
-                vitae impedit debitis in, doloribus nemo aperiam sed, fugit molestiae dolore corrupti veritatis ad
-                laudantium possimus.
-            </p>
-        </div>
-
-        <div class="project three">
-            <h2>Topic 3</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis quasi unde ducimus
-                suscipit! Placeat voluptatibus iusto soluta cupiditate doloribus ratione! Esse consectetur tempore autem
-                nulla praesentium distinctio, expedita ut?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit consequuntur, dolorem quis odio
-                vitae impedit debitis in, doloribus nemo aperiam sed, fugit molestiae dolore corrupti veritatis ad
-                laudantium possimus.
-            </p>
-        </div>
-
-        <div class="project four">
-            <h2>Topic 4</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis quasi unde ducimus
-                suscipit! Placeat voluptatibus iusto soluta cupiditate doloribus ratione! Esse consectetur tempore autem
-                nulla praesentium distinctio, expedita ut?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit consequuntur, dolorem quis odio
-                vitae impedit debitis in, doloribus nemo aperiam sed, fugit molestiae dolore corrupti veritatis ad
-                laudantium possimus.
-            </p>
-        </div>
+    <h1>Container<span style="color: blue;"> - </span>boxes</h1>
+    <div class="projects container">
+        <div class="project">Box-1</div>
+        <div class="project">Box-2</div>
+        <div class="project">Box-3</div>
+        <div class="project">Box-4</div>
+        <div class="project">Box-5</div>
+        <div class="project">Box-6</div>
+        <div class="project">Box-7</div>
+        <div class="project">Box-8</div>
+        <div class="project">Box-9</div>
+        <div class="project">Box-10</div>
     </div>
 </body>
 
