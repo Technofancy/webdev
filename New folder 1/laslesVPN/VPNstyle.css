@@ -38,7 +38,6 @@ ul {
 
 ul li {
     display: flex;
-    /* justify-content: space-between; */
     margin-left: 15px;
 }
 
@@ -48,8 +47,6 @@ ul li a {
     font-family: Rubik;
     font-size: 16px;
     font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
     text-align: left;
 }
 
@@ -220,7 +217,7 @@ button a {
     height: 125px;
 }
 
-/* Feature sections iamge and so on ... */
+/* Feature sections image and so on ... */
 
 .feature_sect {
     /* border: 1px solid; */
@@ -346,7 +343,7 @@ button a {
 .plan-box .box img {
     width: 144.9px;
     height: 165.37px;
-    margin-top: 10%;
+    margin-top: 50px;
 }
 
 .plan-box .box .phead {
@@ -370,12 +367,14 @@ button a {
 
 .plan-points .pointing {
     display: flex;
-    margin-top: -7%;
+    align-items: center;
+    margin-top: 0%;
 }
 
 .plan-points .pointing img {
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
+    margin-top: 0%;
 }
 
 .plan-points .pointing p {
@@ -383,7 +382,7 @@ button a {
     font-family: Rubik;
     font-size: 14px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
 }
