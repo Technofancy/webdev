@@ -4,162 +4,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mindrisers call-form</title>
+    <title>LaslesVPN</title>
 
     <style>
-        .parent {
-            border: 1px solid white;
-            width: 1320px;
-            height: 784px;
-            top: 4488px;
-            left: -19704px;
-            padding: 50px, 0px, 50px, 0px;
-            gap: 10px;
-            /* margin: auto; */
-        }
-
-        .child {
-            display: flex;
-            width: 1320px;
-            height: 684px;
-            padding: 40px;
-            border-radius: 24px;
-            gap: 40px;
-            background: #FFF5C5;
-            overflow: hidden;
-        }
-
-        .callback-sect {
-            width: 570px;
-            height: 155px;
-            gap: 40px;
-        }
-
-        header {
-            width: 418px;
-            height: 63px;
-        }
-
-        header p {
-            position: relative;
-            font-family: Poppins;
-            font-size: 42px;
-            font-weight: 600;
-            line-height: 63px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #E27C00;
-        }
-
-        header span img {
-            position: absolute;
-            width: 175px;
-            height: 16px;
-            margin-top: 45px;
-            margin-left: -170px;
-        }
-
-        .callback-sect .Descript {
-            width: 570px;
-            height: 72px;
-
-            font-family: Poppins;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #E27C00;
-            margin-top: 50px;
-        }
-
-        .child .floating-bg {
-            display: flex;
-            width: 340px;
-            height: 300px;
-            margin-top: 365px;
-            margin-left: -1454px;
-        }
-
-        .floating-bg .ellipse-1 {
-            /* border: 1px solid #D3FFEA; */
-            width: 300px;
-            height: 300px;
-            border-radius: 100%;
-            top: 365px;
-            left: -66.5px;
-            background-color: #D3FFEA;
-        }
-
-        .floating-bg .ellipse-2 {
-            /* border: 1px solid #D3FFEA; */
-            width: 40px;
-            height: 40px;
-            border-radius: 100%;
-            top: 365px;
-            left: 233.5px;
-            background-color: #D3FFEA;
-        }
     </style>
 
-    <link rel="stylesheet" href="./formStyle.css">
-
+    <link rel="stylesheet" href="./VPNstyle.css">
 </head>
 
 <body>
-    <div class="parent">
-        <div class="child">
 
-            <div class="callback-sect">
-                <header>
-                    <p>Request a <span>Callback <img src="./img/Vector 1.png" alt="vector"></span></p>
-                </header>
-                <p class="Descript">Would You Like To Speak To One Of Our Advisor Over The Phone? Just Submit Your
-                    Details And Will Be In Touch Shortly. You Can Also Email Us If You Would prefer.</p>
+    <div class="navbar">
+        <div class="logo-wrapper">
+            <img src="./img/Standard Collection 27logo.png" alt="Logo">
+            <p>Lasles<span>VPN</span></p>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Features</a>
+            </li>
+            <li>
+                <a href="#">Pricing</a>
+            </li>
+            <li>
+                <a href="#">Testimonials</a>
+
+            </li>
+            <li>
+                <a href="#">Help</a>
+            </li>
+        </ul>
+
+        <div class="Sign">
+            <a href="#">Sign In</a>
+            <button><a href="#">Sign Up</a></button>
+        </div>
+    </div>
+
+    <div class="main-view">
+        <div class="left-view">
+            <p class="first">Want anything to be easy with <span>LaslesVPN.</span></p>
+
+            <p class="second">provide a network for all your needs with ease and fun using <span>LaslesVPN</span>
+                discover interesting
+                features from us.</p>
+
+            <div class="get-started">
+                <button><a href="#">Get Started</a></button>
             </div>
 
-            <form id="info-form" class="info-counter">
+        </div>
 
-                <div class="label-input-container">
-                    <label for="course">I'm interested in</label>
-                    <div class="input-container">
-                        <input type="text" id="course" name="course" value="Select your course" required>
-                    </div>
+        <div class="right-view">
+            <img src="./img/Illustration 1.png" alt="Thumbnail View">
+        </div>
+    </div>
+
+    <div class="num-bar">
+
+        <div class="users num">
+            <img src="./img/user-icon.png" alt="users-logo" class="logo">
+            <p><span>90+</span><br>Users</p>
+        </div>
+
+        <div class="thin-bar"></div>
+
+        <div class="locations num">
+            <img src="./img/location.png" alt="Locations-logo" class="logo">
+            <p><span>30+</span><br>Locations</p>
+        </div>
+
+        <div class="thin-bar"></div>
+
+        <div class="servers num">
+            <img src="./img/server.png" alt="servers-logo" class="logo">
+            <p><span>50+</span><br>Servers</p>
+        </div>
+
+    </div>
+
+    <div class="feature_sect">
+        <div class="feature_img">
+            <img src="./img/Illustration 2.png" alt="Feature_Image">
+        </div>
+
+        <div class="features">
+            <p class="p1">We Provide Many Features You Can Use</p>
+
+            <p class="p2">You can explore the features that provide with fun and have their own functions each feature.
+            </p>
+
+            <div class="feature_points">
+                <div class="bulleting">
+                    <img src="./img/tick-dot.png" alt="Tick-dots">
+                    <p>Powerful online protection.</p>
                 </div>
 
-                <div class="label-input-container">
-                    <label for="name">Name:</label>
-                    <div class="input-container">
-                        <input type="text" id="name" name="name" value="Enter Full-Name" required>
-                    </div>
+                <div class="bulleting">
+                    <img src="./img/tick-dot.png" alt="Tick-dots">
+                    <p>Internet without borders.</p>
                 </div>
 
-                <div class="label-input-container">
-                    <label for="email">Email:</label>
-                    <div class="input-container">
-                        <input type="email" id="email" name="email" value="Enter e-mail" required>
-                    </div>
+                <div class="bulleting">
+                    <img src="./img/tick-dot.png" alt="Tick-dots">
+                    <p>Supercharged VPN</p>
                 </div>
 
-                <div class="label-input-container">
-                    <label for="phone">Phone:</label>
-                    <div class="input-container">
-                        <input type="tel" id="phone" name="phone" value="Enter phone number" required>
-                    </div>
+                <div class="bulleting">
+                    <img src="./img/tick-dot.png" alt="Tick-dots">
+                    <p>No specific time limits.</p>
                 </div>
 
-                <div class="btn">
-                    <button type="submit"><span>Submit</span><img src="./img/clarity_arrow-line.png" alt="->"></button>
-                </div>
-            </form>
-
-            <div class="floating-bg">
-                <div class="ellipse-1"></div>
-                <div class="ellipse-2"></div>
             </div>
 
         </div>
     </div>
+
+    <div class="choose-plan">
+
+        <p class="p1st">Choose Your Plan</p>
+
+        <p class="p2nd">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+
+    </div>
+
+    <div class="plan-box">
+        <div class="free-plan box">
+            <img src="./img/Free.svg" alt="Plan-box">
+
+            <p class="phead">Free Plan</p>
+
+            <div class="plan-points">
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Unlimited Bandwidth</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Encrypted Connection</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>No Traffic Logs</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Works on All Devices</p>
+                </div>
+            </div>
+
+            <div class="plan-button">
+                <p class="costing"><span>Free</span></p>
+                <button><a href="#">Select</a></button>
+            </div>
+
+        </div>
+
+        <div class="standard-plan box">
+            <img src="./img/Free.svg" alt="Plan-box">
+
+            <p class="phead">Standard Plan</p>
+
+            <div class="plan-points">
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Unlimited Bandwidth</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Encrypted Connection</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Yes Traffic Logs</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Works on All Devices</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Connect Anywhere</p>
+                </div>
+
+            </div>
+
+            <div class="plan-button">
+                <p class="costing"><span>$9</span>/mo</p>
+                <button><a href="#">Select</a></button>
+            </div>
+
+        </div>
+
+        <div class="premium-plan box">
+            <img src="./img/Free.svg" alt="Plan-box">
+
+            <p class="phead">Premium Plan</p>
+
+            <div class="plan-points">
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Unlimited Bandwidth</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Encrypted Connection</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Yes Traffic Logs</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Works on All Devices</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Connect Anywhere</p>
+                </div>
+
+                <div class="pointing">
+                    <img src="./img/tick-icon.png" alt="Ticks">
+                    <p>Get New Features</p>
+                </div>
+
+            </div>
+
+            <div class="plan-button">
+                <p class="costing"><span>$12</span>/mo</p>
+                <button><a href="#">Select</a></button>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 
 </html>

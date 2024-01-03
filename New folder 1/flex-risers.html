@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindrisers call-form</title>
+
+    <style>
+        .parent {
+            border: 1px solid white;
+            width: 1320px;
+            height: 784px;
+            top: 4488px;
+            left: -19704px;
+            padding: 50px, 0px, 50px, 0px;
+            gap: 10px;
+            /* margin: auto; */
+        }
+
+        .child {
+            display: flex;
+            width: 1320px;
+            height: 684px;
+            padding: 40px;
+            border-radius: 24px;
+            gap: 40px;
+            background: #FFF5C5;
+            overflow: hidden;
+        }
+
+        .callback-sect {
+            width: 570px;
+            height: 155px;
+            gap: 40px;
+        }
+
+        header {
+            width: 418px;
+            height: 63px;
+        }
+
+        header p {
+            position: relative;
+            font-family: Poppins;
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 63px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #E27C00;
+        }
+
+        header span img {
+            position: absolute;
+            width: 175px;
+            height: 16px;
+            margin-top: 45px;
+            margin-left: -170px;
+        }
+
+        .callback-sect .Descript {
+            width: 570px;
+            height: 72px;
+
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #E27C00;
+            margin-top: 50px;
+        }
+
+        .child .floating-bg {
+            display: flex;
+            width: 340px;
+            height: 300px;
+            margin-top: 365px;
+            margin-left: -1454px;
+        }
+
+        .floating-bg .ellipse-1 {
+            /* border: 1px solid #D3FFEA; */
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            top: 365px;
+            left: -66.5px;
+            background-color: #D3FFEA;
+        }
+
+        .floating-bg .ellipse-2 {
+            /* border: 1px solid #D3FFEA; */
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            top: 365px;
+            left: 233.5px;
+            background-color: #D3FFEA;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./formStyle.css">
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+
+            <div class="callback-sect">
+                <header>
+                    <p>Request a <span>Callback <img src="./img/Vector 1.png" alt="vector"></span></p>
+                </header>
+                <p class="Descript">Would You Like To Speak To One Of Our Advisor Over The Phone? Just Submit Your
+                    Details And Will Be In Touch Shortly. You Can Also Email Us If You Would prefer.</p>
+            </div>
+
+            <form id="info-form" class="info-counter">
+
+                <div class="label-input-container">
+                    <label for="course">I'm interested in</label>
+                    <div class="input-container">
+                        <input type="text" id="course" name="course" value="Select your course" required>
+                    </div>
+                </div>
+
+                <div class="label-input-container">
+                    <label for="name">Name:</label>
+                    <div class="input-container">
+                        <input type="text" id="name" name="name" value="Enter Full-Name" required>
+                    </div>
+                </div>
+
+                <div class="label-input-container">
+                    <label for="email">Email:</label>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" value="Enter e-mail" required>
+                    </div>
+                </div>
+
+                <div class="label-input-container">
+                    <label for="phone">Phone:</label>
+                    <div class="input-container">
+                        <input type="tel" id="phone" name="phone" value="Enter phone number" required>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <button type="submit"><span>Submit</span><img src="./img/clarity_arrow-line.png" alt="->"></button>
+                </div>
+            </form>
+
+            <div class="floating-bg">
+                <div class="ellipse-1"></div>
+                <div class="ellipse-2"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
